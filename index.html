@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
+</head>
+<body>
+    <div id="app">
+        <h2>Todos</h2>
+        <ul>
+            <li v-for="task in tasks">
+                <i :class="task.status ? 'fa-check-square-o' : 'fa-square-o'" class="fa" aria-hidden="true" @click="changeStatus($index)"></i>
+                <span :style="task.status ? 'text-decoration: line-through' : ''">{{task.title}}</span>
+                <i @click="removeTask(task)" class="fa fa-times" aria-hidden="true"></i>
+            </li>
+        </ul>
+        <div class="add-task">
+            <input type="text" placeholder="Введите текст задачи" v-model="newTask" v-on:keyup.enter="addTask">
+        </div>
+    </div>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script src="./static/app.js"></script>
+</body>
+</html>

@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/semenov-k/TodoList-Vue.js/issues"
   },
-  "homepage": "https://github.com/semenov-k/TodoList-Vue.js#readme"
+  "homepage": "https://github.com/semenov-k/TodoList-Vue.js#readme",
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "vue": "^1.0.27"
+  }
 }
