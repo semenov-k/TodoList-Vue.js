@@ -1,0 +1,19 @@
+{
+  "name": "todolist-vue.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "ws"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semenov-k/TodoList-Vue.js.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/semenov-k/TodoList-Vue.js/issues"
+  },
+  "homepage": "https://github.com/semenov-k/TodoList-Vue.js#readme"
+}
